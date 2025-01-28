@@ -13,6 +13,7 @@ namespace Unity.FPS.AI
         void Awake()
         {
             Enemies = new List<EnemyController>();
+           
         }
 
         public void RegisterEnemy(EnemyController enemy)
