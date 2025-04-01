@@ -10,9 +10,4 @@ public class Sword : Weapon
 	{
 		Debug.Log(name + " slashes the enemy");
 	}
-
-	private void Start()
-	{
-		Attack();
-	}
 }

@@ -10,9 +10,4 @@ public class Bow : Weapon
 	{
 		Debug.Log(name + " shoots the enemy");
 	}
-
-	private void Start()
-	{
-		Attack();
-	}
 }

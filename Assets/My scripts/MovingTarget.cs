@@ -12,9 +12,7 @@ namespace AG2298
 		public Vector3 move2 = new Vector3(0, 0, 0);
 		private bool position;
 		
-		
-
-		void Update()
+		public void Moving()
 		{
 			if (transform.position == move)
 			{
@@ -34,7 +32,11 @@ namespace AG2298
 					break;
 			}
 		}
+
+		void Update()
+		{
+			Moving();
+		}
 	}
 }
-
-		
+	

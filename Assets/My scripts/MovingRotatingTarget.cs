@@ -13,6 +13,9 @@ namespace AG2298
         void Update()
         {
             transform.Rotate(rotation, rotationspeed * Time.deltaTime);
+
+            Moving();
+       
         }
     }
 }

@@ -10,9 +10,9 @@ namespace AG2298
 		{
 			Name=name;
 		}
-	
 
-	public abstract void Attack();
+
+		public abstract void Attack();
 	
 	}
    

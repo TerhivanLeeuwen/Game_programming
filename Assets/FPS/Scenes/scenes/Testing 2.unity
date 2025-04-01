@@ -290,7 +290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37408a229cee7514f85b9b1f5db96c8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 2
   move: {x: 8, y: 1, z: -7}
   move2: {x: -8, y: 1, z: 7}
   rotationspeed: 9
@@ -384,7 +384,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &556695616
+--- !u!1 &910229989
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -392,34 +392,34 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 556695618}
-  - component: {fileID: 556695617}
+  - component: {fileID: 910229991}
+  - component: {fileID: 910229990}
   m_Layer: 0
-  m_Name: Sword
+  m_Name: Weapons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &556695617
+--- !u!114 &910229990
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 556695616}
+  m_GameObject: {fileID: 910229989}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71fcb60558a4fe54dabab6cd6c0ec45b, type: 3}
+  m_Script: {fileID: 11500000, guid: 1a5f3406e93e2c047a464027b85ae353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &556695618
+--- !u!4 &910229991
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 556695616}
+  m_GameObject: {fileID: 910229989}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -1102,10 +1102,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5355d549b07c98742bf24bd82e50bdaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 4
   move: {x: 0, y: 0, z: 0}
-  move2: {x: 0, y: 0, z: 0}
-  pulsingSpeed: 9
+  move2: {x: 6, y: 6, z: 6}
+  pulsingSpeed: 3
   pulsingScale: {x: 4, y: 4, z: 4}
   pulsingScale2: {x: 1, y: 1, z: 1}
 --- !u!135 &1595999437
@@ -1193,7 +1193,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 13.9, y: 2.62, z: -4.64}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1320,50 +1320,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2131661112
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2131661114}
-  - component: {fileID: 2131661113}
-  m_Layer: 0
-  m_Name: Bow
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2131661113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2131661112}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99fde14da8a3dbb4d8675b9040177bbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &2131661114
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2131661112}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2137787304
 GameObject:
   m_ObjectHideFlags: 0
@@ -1408,5 +1364,4 @@ SceneRoots:
   - {fileID: 1173426778}
   - {fileID: 305613568}
   - {fileID: 1595999440}
-  - {fileID: 556695618}
-  - {fileID: 2131661114}
+  - {fileID: 910229991}
