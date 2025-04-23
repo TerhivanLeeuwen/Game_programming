@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Unity.FPS.Game;
 using UnityEngine;
 
@@ -6,7 +7,8 @@ namespace Unity.FPS.Gameplay
 {
     public class ProjectileStandard : ProjectileBase
     {
-        [Header("General")] [Tooltip("Radius of this projectile's collision detection")]
+        [Header("General")]
+        [Tooltip("Radius of this projectile's collision detection")]
         public float Radius = 0.01f;
 
         [Tooltip("Transform representing the root of the projectile (used for accurate collision detection)")]
@@ -27,13 +29,14 @@ namespace Unity.FPS.Gameplay
         [Tooltip("Offset along the hit normal where the VFX will be spawned")]
         public float ImpactVfxSpawnOffset = 0.1f;
 
-        [Tooltip("Clip to play on impact")] 
+        [Tooltip("Clip to play on impact")]
         public AudioClip ImpactSfxClip;
 
         [Tooltip("Layers this projectile can collide with")]
         public LayerMask HittableLayers = -1;
 
-        [Header("Movement")] [Tooltip("Speed of the projectile")]
+        [Header("Movement")]
+        [Tooltip("Speed of the projectile")]
         public float Speed = 20f;
 
         [Tooltip("Downward acceleration from gravity")]
@@ -46,13 +49,15 @@ namespace Unity.FPS.Gameplay
         [Tooltip("Determines if the projectile inherits the velocity that the weapon's muzzle had when firing")]
         public bool InheritWeaponVelocity = false;
 
-        [Header("Damage")] [Tooltip("Damage of the projectile")]
+        [Header("Damage")]
+        [Tooltip("Damage of the projectile")]
         public float Damage = 40f;
 
         [Tooltip("Area of damage. Keep empty if you don<t want area damage")]
         public DamageArea AreaOfDamage;
 
-        [Header("Debug")] [Tooltip("Color of the projectile radius debug view")]
+        [Header("Debug")]
+        [Tooltip("Color of the projectile radius debug view")]
         public Color RadiusColor = Color.cyan * 0.2f;
 
         ProjectileBase m_ProjectileBase;
@@ -266,4 +271,6 @@ namespace Unity.FPS.Gameplay
             Gizmos.DrawSphere(transform.position, Radius);
         }
     }
+
+   
 }
